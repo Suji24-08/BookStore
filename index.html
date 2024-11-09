@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookStore</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>BookStore</h2>
+        <div class="container">
+            <div class="book-palet">
+                <h3 id="bookname">THE ALCHEMIST</h3>
+                <h3 id="bookauth">Paulo Coelho</h3>
+                <p id="bookdesc">A captivating tale about a young shepherd named Santiago who embarks on a journey to find treasure. Along the way, he learns valuable life lessons about the pursuit of dreams, the importance of perseverance, and discovering one's true purpose.</p>
+                <button onclick="del(event)">Delete</button>
+            </div>
+            <div class="book-palet">
+                <h3 id="bookname">TO KILL A MOCKINGBIRD</h3>
+                <h3 id="bookauth">Harper Lee</h3>
+                <p id="bookdesc">This classic novel explores the themes of racial injustice and moral growth in the American South. Seen through the eyes of young Scout Finch, it captures the profound impact of prejudice and compassion on a community, revealing the powerful </p>
+                <button onclick="del(event)">Delete</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div id="popup">
+            <h1>Add a Book</h1>
+            <form>
+            <input id="title" placeholder="Enter title here...">
+            <input id="author" placeholder="Enter author here...">
+            <textarea id="desc" placeholder="Enter the description..."></textarea>
+            <button id="addbtn">ADD</button>
+            <button id="cancelbtn">Cancel</button>
+        </form>
+        </div>
+        <button id="plus">+</button>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+h2{
+    padding: 5px;
+    color: rgb(200, 17, 48);
+    background-color: black;
+}
+.container{
+    display: inline-block;
+}
+.book-palet{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 25%;
+    height: 25%;
+    background-color: rgb(240, 109, 131);
+    border-radius: 25px;
+    vertical-align: top;
+}
+.book-palet h3{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 120px;
+    margin-top: 5px;
+}
+#plus{
+    font-size: 60px;
+    background-color: rgb(240, 109, 131);
+    width : 70px;
+    height: 70px;
+    border-radius: 100%;
+    /*text-align: center;*/
+    color: white;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+}
+#overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    display: none;    
+}
+#popup{
+    background-color: rgb(240, 109, 131);
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    top: 200px;
+    left: 450px;
+    z-index: 2;
+    display: none; 
+}
+#popup h1{
+    padding: 10px;
+    text-align: center;
+}
+#popup input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: transparent;
+}
+#popup textarea{
+    width: 400px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: transparent;
+}
+input::placeholder{
+    color: black;
+    padding: 10px;
+}
+textarea::placeholder{
+    color: black;
+    padding: 10px;
+}
+
+.book-palet p{
+    margin-top: 15px;
+}
